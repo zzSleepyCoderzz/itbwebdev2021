@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="course.css"> 
+    <title>ITB WEB DEV COURSE</title>
+    <h1 class = "h1">
+        MY FIRST WEBSITE
+    </h1>
+</head>
+<body>
+    <script>
+        var studentName ;
+        var class1 ;
+        var bio ; 
+        function editname(num) {
+            if(num ==1){
+                studentName = window.prompt("Input your name:");
+                document.getElementById("p1").innerHTML = "Name : " +  studentName + "<button onclick='editname()'> Edit </button>";
+            }
+
+            else if (num == 2){
+                class1 = window.prompt("Input your class:");
+                document.getElementById("p2").innerHTML = "Class : " +  class1 + "<button onclick='editname()'> Edit </button>";
+            }
+            else {
+                bio = window.prompt("Input your bio:");
+                document.getElementById("p3").innerHTML = "Bio : " +  bio + "<button onclick='editname()'> Edit </button>";
+            }
+        }
+
+    </script>
+    <div id = "div1" >
+        <br>
+        <br>
+        <img id = "img1" src="squidward.jpg" alt="No image here">
+        <p id = "p1">Name : <button onclick="editname(1)"> Edit </button></p>
+        <p id = "p2">Class :  <button onclick="editname(2)">Edit </button></p>
+        <p id = "p3">Bio :  <button onclick="editname(3)"> Edit </button></p>
+        <br>
+        <br>
+    </div>
+</body>
+</html>
